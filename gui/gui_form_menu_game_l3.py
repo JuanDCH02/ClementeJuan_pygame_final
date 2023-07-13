@@ -143,7 +143,7 @@ class FormGameLevel3(Form):
     
             
         self.shoot_player(keys)
-        #self.enemy_collide()
+        self.enemy_collide()
         for aux_widget in self.widget_list:
             aux_widget.update(lista_eventos)
 
@@ -157,7 +157,7 @@ class FormGameLevel3(Form):
 
         self.player_1.events(delta_ms,keys)
         self.player_1.update(delta_ms,self.plataform_list)
-        #self.shoot_enemy()
+        self.shoot_enemy()
 
         self.pb_lives.value = self.player_1.lives 
         self.coins_sprites.update()
