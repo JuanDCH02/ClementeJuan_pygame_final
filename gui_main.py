@@ -15,6 +15,7 @@ BACKGROUND_MUSIC.play(-1)
 
 flags = DOUBLEBUF 
 screen = pygame.display.set_mode((ANCHO_VENTANA,ALTO_VENTANA), flags, 16)
+pygame.display.set_caption("Vaquero vs Trollz")
 pygame.init()
 clock = pygame.time.Clock()
 
